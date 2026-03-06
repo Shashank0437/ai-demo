@@ -1,0 +1,177 @@
+/* Subtle Feature Area Badges */
+.feature-area-badge {
+  padding: 4px 10px;
+  background: #F3F4F6;
+  border: 1px solid #E5E7EB;
+  border-radius: 6px;
+  font-size: 11px;
+  color: #6B7280;
+  font-weight: 500;
+  white-space: nowrap;
+  transition: all 0.15s ease;
+}
+
+.feature-area-badge:hover {
+  background: #E5E7EB;
+  color: #374151;
+}
+
+/* Subtle Scenario Feature Badge */
+.scenario-feature-badge {
+  padding: 3px 8px;
+  background: #F9FAFB;
+  border: 1px solid #E5E7EB;
+  border-radius: 4px;
+  font-size: 10px;
+  color: #9CA3AF;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  transition: all 0.15s ease;
+}
+
+.scenario-feature-badge:hover {
+  background: #F3F4F6;
+  color: #6B7280;
+}
+
+/* Test Case Type Badges */
+.type-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  flex-shrink: 0;
+  margin-left: 12px;
+  align-self: center;
+  width: 20px;
+  height: 20px;
+  border-radius: 4px;
+  text-transform: uppercase;
+}
+
+.type-badge.type-positive {
+  color: #10B981;
+  background-color: rgba(16, 185, 129, 0.1);
+}
+
+.type-badge.type-negative {
+  color: #EF4444;
+  background-color: rgba(239, 68, 68, 0.1);
+}
+
+.type-badge.type-edge {
+  color: #3B82F6;
+  background-color: rgba(59, 130, 246, 0.1);
+}
+
+.type-badge.type-ui {
+  color: #EAB308;
+  background-color: rgba(234, 179, 8, 0.1);
+}
+
+.type-badge.type-default {
+  color: #9CA3AF;
+  background-color: rgba(156, 163, 175, 0.1);
+}
+
+.test-case-meta-right {
+  display: flex;
+  align-items: center;
+  align-self: flex-start;
+  margin-top: 2px;
+}
+
+/* Filter Section */
+.filter-section {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  padding: 16px 20px;
+  background: #FFFFFF;
+  border-bottom: 1px solid #E5E7EB;
+  flex-wrap: wrap;
+}
+
+.filter-group {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.filter-label {
+  font-size: 13px;
+  font-weight: 600;
+  color: #374151;
+  margin-right: 4px;
+}
+
+.filter-pill {
+  padding: 6px 12px;
+  border-radius: 9999px;
+  font-size: 13px;
+  font-weight: 500;
+  color: #6B7280;
+  background: #F3F4F6;
+  border: 1px solid transparent;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.filter-pill:hover {
+  background: #E5E7EB;
+  color: #374151;
+}
+
+.filter-pill.active {
+  /* Default active fallback */
+  background: #F0F9FF;
+  color: #0369A1;
+  border-color: #BAE6FD;
+}
+
+/* Priority active states */
+.filter-pill.active.priority-p1 {
+  background: #fef2f2;
+  color: #dc2626;
+  border-color: #fecaca;
+}
+
+.filter-pill.active.priority-p2 {
+  background: #fef3c7;
+  color: #d97706;
+  border-color: #fde68a;
+}
+
+.filter-pill.active.priority-p3,
+.filter-pill.active.priority-p4 {
+  background: #eff6ff;
+  color: #1e40af;
+  border-color: #bfdbfe;
+}
+
+/* Type active states */
+.filter-pill.active.type-positive {
+  background: #ecfdf5;
+  color: #10B981;
+  border-color: #a7f3d0;
+}
+
+.filter-pill.active.type-negative {
+  background: #fef2f2;
+  color: #EF4444;
+  border-color: #fecaca;
+}
+
+.filter-pill.active.type-edge {
+  background: #eff6ff;
+  color: #3B82F6;
+  border-color: #bfdbfe;
+}
+
+.filter-pill.active.type-ui-validation {
+  background: #fef3c7;
+  color: #EAB308;
+  border-color: #fde68a;
+}

@@ -1,0 +1,179 @@
+.plan-diff {
+  margin-top: 16px;
+  padding: 16px;
+  border-radius: 12px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+/* Default - green */
+.plan-diff-default,
+.plan-diff-add {
+  background: #f0fdf4;
+  border: 1px solid #bbf7d0;
+}
+
+.plan-diff-default .diff-title,
+.plan-diff-add .diff-title {
+  color: #15803d;
+}
+
+/* Delete - light red */
+.plan-diff-delete {
+  background: #fef2f2;
+  border: 1px solid #fecaca;
+}
+
+.plan-diff-delete .diff-title {
+  color: #dc2626;
+}
+
+/* Modify - light blue */
+.plan-diff-modify {
+  background: #eff6ff;
+  border: 1px solid #bfdbfe;
+}
+
+.plan-diff-modify .diff-title {
+  color: #2563eb;
+}
+
+/* Replan - light purple */
+.plan-diff-replan {
+  background: #faf5ff;
+  border: 1px solid #e9d5ff;
+}
+
+.plan-diff-replan .diff-title {
+  color: #9333ea;
+}
+
+.diff-title {
+  font-size: 13px;
+  font-weight: 700;
+  margin-bottom: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+}
+
+.diff-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.diff-item {
+  background: rgba(255, 255, 255, 0.7);
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  padding: 12px 14px;
+  transition: all 0.2s;
+}
+
+.diff-item:hover {
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+/* Delete items - light red background */
+.diff-item-delete {
+  background: #fef2f2;
+  border-color: #fecaca;
+}
+
+/* Modify items - light blue background */
+.diff-item-modify {
+  background: #eff6ff;
+  border-color: #bfdbfe;
+}
+
+/* Replan items - light purple background */
+.diff-item-replan {
+  background: #faf5ff;
+  border-color: #e9d5ff;
+}
+
+/* Add items - light green background */
+.diff-item-add {
+  background: #f0fdf4;
+  border-color: #d1fae5;
+}
+
+.diff-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 8px;
+}
+
+.diff-action {
+  font-size: 11px;
+  font-weight: 600;
+  padding: 2px 8px;
+  border-radius: 6px;
+  text-transform: uppercase;
+  letter-spacing: 0.3px;
+}
+
+/* Delete actions - light red */
+.diff-action-delete {
+  color: #dc2626;
+  background: #fee2e2;
+}
+
+/* Modify actions - blue */
+.diff-action-modify {
+  color: #2563eb;
+  background: #dbeafe;
+}
+
+/* Replan actions - purple */
+.diff-action-replan {
+  color: #9333ea;
+  background: #f3e8ff;
+}
+
+/* Add actions - green */
+.diff-action-add {
+  color: #15803d;
+  background: #dcfce7;
+}
+
+.diff-target {
+  font-size: 13px;
+  font-weight: 500;
+  color: #374151;
+  flex: 1;
+}
+
+.diff-content {
+  font-size: 13px;
+  color: #6b7280;
+  line-height: 1.6;
+}
+
+.diff-detail {
+  padding: 6px 0;
+  line-height: 1.6;
+}
+
+.diff-updates {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.diff-field {
+  display: flex;
+  gap: 6px;
+  align-items: baseline;
+}
+
+.diff-field-name {
+  font-weight: 600;
+  color: #4b5563;
+  min-width: 80px;
+}
+
+.diff-field-value {
+  color: #111827;
+  font-weight: 500;
+}
