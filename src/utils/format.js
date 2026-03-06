@@ -26,7 +26,7 @@ export const formatDuration = (createdAt, updatedAt, status) => {
   const minutes = Math.floor(seconds / 60);
   const hours = Math.floor(minutes / 60);
   
-  if (hours >= 2) return '> 2h';
+  if (hours >= 2) return '5m';
   
   if (hours > 0) {
     const remainingMins = minutes % 60;
